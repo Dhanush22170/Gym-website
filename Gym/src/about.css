@@ -1,0 +1,92 @@
+/* About.css - Updated for aligned image layout */
+
+/* Base Styles */
+.about-page {
+    background: linear-gradient(135deg, #120101 50%, #340202 50%);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h1, 
+  .section-header h2 {
+    color: #f0a500;
+  }
+  
+  .section-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  /* Aligned Image Grid */
+  .equipment-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .equipment-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .equipment-card {
+    flex: 1;
+    max-width: 500px;
+    background: rgba(26, 26, 26, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .equipment-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0a500;
+  }
+  
+  .equipment-card h3 {
+    color: #f0a500;
+    padding: 15px 20px 5px;
+    font-size: 1.3rem;
+  }
+  
+  .equipment-card p {
+    padding: 0 20px 15px;
+    color: #ccc;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .equipment-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .equipment-card {
+      max-width: 100%;
+    }
+    
+    .section-header h1 {
+      font-size: 2rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.2rem;
+    }
+  }
